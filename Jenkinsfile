@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/ayushchahal44/docker-wordpress.git'
+                git branch: 'master', url: 'https://github.com/ayushchahal44/docker-wordpress.git'
             }
         }
         stage('Build & Deploy') {
